@@ -2,8 +2,8 @@
 
 Work with 2-bit data
 
-#Current Methods
+# Current Methods
 getUint2
 
-#Coming Soon
+# Coming Soon
 Uint2Array
