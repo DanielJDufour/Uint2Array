@@ -1,32 +1,5 @@
 'use strict';
 
-/*
-class Uint2Array extends Uint8Array {
-
-    constructor(input) {
-
-        let type_of_input = typeof input;
-
-        if (type_of_input === "number" || input instanceof Number) {
-            let size = input;
-            console.log("constructing with size", size);
-            super(size);
-        } else if (input instanceof ArrayBuffer) {
-            //console.log("constructing Uint2Array with ArrayBuffer of ", input);
-        } else {
-           super(input);
-           console.log("constructed");
-        }
-    }
-} 
-*/
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Uint2Array = function Uint2Array() {
-    _classCallCheck(this, Uint2Array);
-};
-
 function getUint2(byteOffset, littleEndian) {
     var floored = Math.floor(byteOffset);
     var bitOffset = byteOffset % 8 / 0.25;
@@ -37,6 +10,5 @@ function getUint2(byteOffset, littleEndian) {
 }
 
 module.exports = {
-    getUint2: getUint2,
-    Uint2Array: Uint2Array
+    getUint2: getUint2
 };
