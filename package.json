@@ -1,7 +1,7 @@
 {
   "name": "nbit",
   "version": "0.0.1",
-  "description": "Uint2Array and other things from Regular JavaScript",
+  "description": "getUint2",
   "main": "index.js",
   "scripts": {
     "babel": "babel --presets es2015 src/index.js -o build/index.js",
@@ -12,12 +12,10 @@
     "url": "git+https://github.com/DanielJDufour/nbit.git"
   },
   "keywords": [
-    "Uint2Array",
-    "Uint4Array",
     "bit",
     "byte",
+    "getUint2",
     "2-bit",
-    "4-bit",
     "unsigned"
   ],
   "author": "Daniel J. Dufour",
