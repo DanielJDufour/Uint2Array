@@ -58,4 +58,7 @@ typings/
 .env
 
 # swap files
+*swm
+*swn
+*swo
 *swp
