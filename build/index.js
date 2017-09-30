@@ -1,8 +1,8 @@
 'use strict';
 
-function getUint2(byteOffset, littleEndian) {
+function getUint2(byteOffset, littleEndian, debug) {
     var floored = Math.floor(byteOffset);
-    var bitOffset = byteOffset % 8 / 0.25;
+    var bitOffset = byteOffset % 1 / 0.25 * 2;
     var raw_string = this.getUint8(floored).toString(2);
     var padded_string = "";
     var number_of_zeros = 8 - raw_string.length;
