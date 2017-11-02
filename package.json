@@ -2,7 +2,7 @@
   "name": "nbit",
   "version": "0.0.4",
   "description": "getUint2",
-  "main": "index.js",
+  "main": "build/index.js",
   "scripts": {
     "babel": "babel --presets es2015 src/index.js -o build/index.js",
     "test": "./node_modules/.bin/mocha --reporter spec"

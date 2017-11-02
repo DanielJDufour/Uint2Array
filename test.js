@@ -56,8 +56,22 @@ function test_conversion(original_values) {
 }
 
 
-[
-    [0,1,2,3,3,2,1,0],
-    [0,1,2,3,3,2,1,0,1,1,1,1,3,2,1,2]
-]
-.forEach(test_conversion);
+let test = () => {
+    describe("Test with Simple Values", () => {
+        [
+            [0,1,2,3,3,2,1,0],
+            [0,1,2,3,3,2,1,0,1,1,1,1,3,2,1,2]
+        ]
+        .forEach(values => {
+            try {
+                test_conversion(values);
+            } catch (error) {
+                console.error(error);
+            }
+        });
+    });
+};
+
+test();
+
+module.exports = test;
