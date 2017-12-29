@@ -1,5 +1,7 @@
 # nbit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/DanielJDufour/nbit.svg)](https://greenkeeper.io/)
+
 Work with 2-bit data
 
 # Current Methods
